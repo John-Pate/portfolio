@@ -69,7 +69,7 @@ export default function Particles({
 
 	type Circle = {
 		x: number;
-		y: number;
+		y: string;
 		translateX: number;
 		translateY: number;
 		size: number;
