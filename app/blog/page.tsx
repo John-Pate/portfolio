@@ -5,7 +5,7 @@ import { Card } from "../components/card";
 import { useEffect, useState } from "react";
 import { Article } from "../work/article";
 
-import data from '../data/about.json';
+import datas from "../datas/blog.json";
 // import Butter from "buttercms";
 // const butter = Butter(`${process.env.NEXT_APP_AUTH_TOKEN}`);
 
@@ -32,22 +32,7 @@ export default function Example() {
     fourth: false,
   });
   useEffect(() => {
-    // const dataFilePath = join(process.cwd(), 'app', 'data', 'about.json');
-    // const data = JSON.parse(readFileSync(dataFilePath, 'utf-8'));
-
-    console.log(data);
-    // fetch(
-    //   `https://api.buttercms.com/v2/posts/?auth_token=${process.env.NEXT_APP_AUTH_TOKEN}`,
-    //   {
-    //     method: "GET",
-    //   }
-    // )
-    //   .then((res) => res.json())
-    //   .then((res) => {
-    //     if (res.meta.count > 10) {}
-    //     setBlogData(res.data);
-    //   })
-    //   .catch((err) => err);
+    setBlogData(datas as unknown as BlogData[]);
   }, []);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name } = e.target;
@@ -123,8 +108,8 @@ export default function Example() {
           </Card>
 
           <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-            {[top2, top3].map((blog) => (
-              <Card key={blog?.slug}>
+            {[top2, top3].filter(Boolean).map((blog) => (
+              <Card key={blog.slug}>
                 <Article blog={blog} />
               </Card>
             ))}

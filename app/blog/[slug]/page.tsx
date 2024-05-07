@@ -1,5 +1,6 @@
 "use client";
 import { Navigation } from "../../components/nav";
+import datas from "../../datas/blog.json";
 
 type Props = {
   params: {
@@ -7,17 +8,12 @@ type Props = {
   };
 };
 
-export default async function PostPage({ params }: Props) {
+export default function PostPage({ params }: Props) {
   const slug = params?.slug;
 
-//   const res = await fetch(
-//     `https://api.buttercms.com/v2/posts/${slug}?auth_token=${process.env.NEXT_APP_AUTH_TOKEN}`,
-//     {
-//       method: "GET",
-//     }
-//   );
-//   const repo = await res.json();
-
+  const featured = datas.find(
+    (blog) => blog.slug.toLowerCase() === `${slug}`
+  )!;
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
@@ -33,18 +29,16 @@ export default async function PostPage({ params }: Props) {
             </a>
           </div> */}
           <span className="text-white text-5xl font-display">
-            {/* {repo.data.title} */}
+            {featured.title}
           </span>
           <div className="flex justify-center">
             {/* <img
-              src={repo.data.featured_image}
+              src={featured.featured_image}
               className="h-1/4w-1/4 min-h-3.5place-self-center rounded-lg"
             ></img> */}
           </div>
           <div className="pb-4 z-10 flex flex-col text-white">
-            <div className="blog-content"
-            //  dangerouslySetInnerHTML={{ __html: repo.data.body }}
-              />
+            <div className="blog-content" dangerouslySetInnerHTML={{ __html: featured.body }} />
           </div>
           {slug !== "introduction" ? (
             <div className="pb-4 z-10 flex flex-col items-center">
