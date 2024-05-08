@@ -159,6 +159,22 @@
         "title": "24th Birthday Reflections",
         "updated": "2024-04-19T16:22:03.933118Z",
         "url": "https://react-starter-buttercms-phi.vercel.app/blog/24th-birthday-reflections"
+    },
+    {
+        "author": {
+            "bio": "",
+            "email": "jacobyideveloper@gmail.com",
+            "facebook_url": "",
+            "first_name": "Jacob",
+            "instagram_url": "",
+            "last_name": "Yi",
+            "linkedin_url": "",
+            "pinterest_url": "",
+            "profile_image": "https://avatars.githubusercontent.com/u/96788421?v=4",
+            "slug": "jacob-yi",
+            "title": "",
+            "twitter_handle": ""
+        }
     }
 ]
 
