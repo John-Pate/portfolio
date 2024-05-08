@@ -33,7 +33,7 @@ export default function PostPage({ params }: Props) {
           </span>
           <div className="flex justify-center">
             {/* <img
-              src={featured.featured_image}
+              src={featured.featured_image || undefined}
               className="h-1/4w-1/4 min-h-3.5place-self-center rounded-lg"
             ></img> */}
           </div>
