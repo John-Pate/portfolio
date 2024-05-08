@@ -46,38 +46,6 @@
             "title": "",
             "twitter_handle": ""
         },
-        "body": "<h2 style=\"font-size: 25px;\">👋 Hello there! &nbsp;&nbsp;<span style=\"font-size: 20px;\">Welcome to my personal blog.</span></h2> <p style=\"font-size: 18px;\"> I'm&nbsp;<span class=\"text-indigo-500\">John Pate</span>, a passionate individual who finds joy in the simple pleasures of life. Today I want to share with you about my family and friends.</p><br><h2 style=\"font-size: 21px;\">Family</h2><p>My family is the foundation that grounds me and provides unconditional love and support.<br>My parents have been a constant source of guidance, wisdom, and encouragement, instilling in me the values of hard work, empathy, and family unity.<br>Whether it's celebrating milestones together or simply enjoying a quiet evening at home, the time I spend with my family is truly precious.<br>I am deeply grateful for the strong family bond we share, which has shaped me into the person I am today.</p><br><h3 style=\"font-size: 21px;\">Friends</h3>\n<p>My closest friends are the people I can rely on through thick and thin, sharing in both the joyous and challenging moments of life.<br>In the digital age, I have also had the privilege of connecting with like-minded individuals from all over the world through online communities and platforms.<br>The unwavering support and camaraderie I receive from my friends are invaluable, as we navigate the ups and downs of our personal and professional journeys together.<br>The online friends I have made have not only enriched my life with their diverse perspectives but have also become a valuable source of support, advice, and creative collaboration.<br>These digital connections have allowed me to explore new hobbies, learn new skills, and engage in thought-provoking discussions that have expanded my horizons.<br>I consider myself incredibly fortunate to be surrounded by a tight-knit circle of individuals who inspire me and celebrate my successes as their own.</p>",
-        "categories": [],
-        "created": "2023-07-15T18:39:03.454839Z",
-        "featured_image": "https://cdn.buttercms.com/XdGNc2epTwSj4aO4LoUo",
-        "featured_image_alt": "Jacob Yi",
-        "meta_description": "Through my Christian upbringing, the love of my family, and my pursuit of financial independence, I explore how these three pillars shape my life and aspirations.",
-        "published": "2023-07-15T18:46:00Z",
-        "seo_title": "Jacob Yi - Introduction",
-        "slug": "about-family-and-friends",
-        "status": "published",
-        "summary": "Through my Christian upbringing, the love of my family, and my pursuit of financial independence, I explore how these three pillars shape my life and aspirations.",
-        "tags": [],
-        "items": [],
-        "title": "With Family and Friend",
-        "updated": "2024-03-25T22:45:35.274334Z",
-        "url": "https://react-starter-buttercms-phi.vercel.app/blog/introduction"
-    },
-    {
-        "author": {
-            "bio": "",
-            "email": "jacobyideveloper@gmail.com",
-            "facebook_url": "",
-            "first_name": "Jacob",
-            "instagram_url": "",
-            "last_name": "Yi",
-            "linkedin_url": "",
-            "pinterest_url": "",
-            "profile_image": "https://avatars.githubusercontent.com/u/96788421?v=4",
-            "slug": "jacob-yi",
-            "title": "",
-            "twitter_handle": ""
-        },
         "body" : "",
         "categories" : [{
             "name": "intro",
