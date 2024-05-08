@@ -17,7 +17,7 @@ export default function About() {
           >
             {data.title}
           </h2>
-          <p className="mt-4 text-zinc-400" dangerouslySetInnerHTML={{ __html: data.body }}/>
+          <div className="mt-4 text-zinc-400" dangerouslySetInnerHTML={{ __html: data.body }}/>
             
           <div className="flex mt-4">
             <div className="pb-4 z-10 flex flex-col items-center">
