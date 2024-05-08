@@ -5,9 +5,8 @@ import { Card } from "../components/card";
 import { useEffect, useState } from "react";
 import { Article } from "../work/article";
 
-import datas from "../datas/blog.json";
-// import Butter from "buttercms";
-// const butter = Butter(`${process.env.NEXT_APP_AUTH_TOKEN}`);
+import aboutDatas from "../datas/about.json";
+import blogDatas from "../datas/blog.json";
 
 interface BlogData {
   featured_image: string;
@@ -19,6 +18,7 @@ interface BlogData {
 }
 
 export default function Example() {
+  const [aboutData, setAboutData] = useState<BlogData[]>([]);
   const [blogData, setBlogData] = useState<BlogData[]>([]);
   const [filterBy, setFilterBy] = useState<{
     first: boolean;
@@ -32,7 +32,9 @@ export default function Example() {
     fourth: false,
   });
   useEffect(() => {
-    setBlogData(datas as unknown as BlogData[]);
+    setAboutData(aboutDatas as unknown as BlogData[]);
+    console.log(aboutData);
+    setBlogData(blogDatas as unknown as BlogData[]);
   }, []);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name } = e.target;
@@ -42,14 +44,14 @@ export default function Example() {
     }));
   };
 
-  const featured = blogData.find(
+  const featured = aboutData.find(
     (blog) => blog.slug.toLowerCase() === "introduction"
   )!;
   const top2 = blogData.find(
-    (blog) => blog.slug.toLowerCase() === "jacobs-hobbies"
+    (blog) => blog.slug.toLowerCase() === "about-family-and-friends"
   )!;
-  const top3 = blogData.find(
-    (blog) => blog.slug.toLowerCase() === "jacobs-identities"
+  const top3 = aboutData.find(
+    (blog) => blog.slug.toLowerCase() === "my-history"
   )!;
   const filteredBlogs = blogData
     .filter(
@@ -83,11 +85,11 @@ export default function Example() {
       <div className="px-6 pt-20 pb-10 mx-auto space-y-3 max-w-7xl lg:px-8 md:space-y-4 md:pt-24 lg:pt-32">
         <h1 className="text-4xl font-bold text-white">Blog</h1>
         <p className="text-lg text-gray-300">
-          A collection of my thoughts, ideas, and experiences.
+          It is a collection of my thoughts, ideas, and experiences.
         </p>
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
-            <Link href={`/blog/${featured?.slug}`}>
+            <Link href={`/about`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <h2
                   id="featured-post"

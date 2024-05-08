@@ -15,16 +15,19 @@
             "twitter_handle": ""
         },
         "body": "<h2 style=\"font-size: 25px;\">👋 Hello there! &nbsp;&nbsp;<span style=\"font-size: 20px;\"> I'm <span class=\"text-indigo-500\">John Pate.</span></span></h2><p><br>&nbsp;I am passionate about leveraging cutting-edge web and blockchain technologies to build innovative digital solutions. <br>&nbsp;With years of experience in full-stack web development and blockchain programming, I possess a diverse skill set that allows me to tackle complex technical challenges.<br>&nbsp;Staying up-to-date with the latest industry trends, I love to learn new things. <br>&nbsp;I take great pride in my ability to translate complex technical concepts into user-friendly interfaces and intuitive decentralized applications. <br><br>&nbsp;On weekends, you can find me glued to the TV, cheering on my favorite football team as they battle it out on the pitch. <br>&nbsp;I am a die-hard supporter of Manchester City team, and the thrill of watching a close match or a last-minute winner never fails to get my adrenaline pumping.<br>&nbsp;Discussing the latest football news, tactics, and player transfers with fellow fans is one of my favorite pastimes, and I relish the opportunity to engage in lively debates about the sport.<br>&nbsp;Attending live matches and experiencing the electric atmosphere of the stadium is a true highlight for me, as I soak in the passion and camaraderie shared by fellow supporters. <br><br>&nbsp;When I'm not immersed in the world of development or football, I enjoy the simple pleasures of life as a regular person.<br>&nbsp;Spending quality time with my family and friends, whether it's sharing a meal, going for a leisurely stroll, or simply catching up over a cup of coffee, is a source of great joy and balance in my life. <br>&nbsp;I make it a priority to maintain a healthy work-life balance, taking time to pursue hobbies and interests outside of my professional endeavors, such as reading, cooking, or exploring the outdoors.<br><br>&nbsp;At the end of the day, I strive to be a kind, compassionate, and well-rounded individual who contributes positively to the communities and relationships I am a part of.<br>&nbsp;Whatever the future holds, I'm ready to embrace the challenges and celebrate the victories along the way.</p>",
-        "categories": [],
+        "categories" : [{
+            "name": "intro",
+            "slug": "intro"
+        }],
         "created": "2023-07-15T18:39:03.454839Z",
         "featured_image": "https://cdn.buttercms.com/XdGNc2epTwSj4aO4LoUo",
         "featured_image_alt": "Jacob Yi",
         "meta_description": "Through my Christian upbringing, the love of my family, and my pursuit of financial independence, I explore how these three pillars shape my life and aspirations.",
         "published": "2023-07-15T18:46:00Z",
-        "seo_title": "Jacob Yi - Introduction",
+        "seo_title": "John Pate - Introduction",
         "slug": "introduction",
         "status": "published",
-        "summary": "Through my Christian upbringing, the love of my family, and my pursuit of financial independence, I explore how these three pillars shape my life and aspirations.",
+        "summary": "I always move forward with a passionate goal. The beauty of life lies in the spirit that does not give in to failure and frustration.",
         "tags": [],
         "items": [],
         "title": "About Me",
@@ -59,7 +62,7 @@
         "seo_title": "Summary of My History",
         "slug": "my-history",
         "status": "published",
-        "summary": "Explore the intersection of faith, contrarianism, and Stoicism in shaping my identity. Delve into Christian values, the embrace of dissent, and the resilience of Stoic philosophy in this introspective journey.",
+        "summary": "This is summary about my work history.",
         "tags": [],
         "items" : [
             {
