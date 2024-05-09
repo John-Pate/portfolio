@@ -1,10 +1,12 @@
 "use client";
-import { Navigation } from "../../components/nav";
-import aboutDatas from "../../datas/about.json";
+import { Navigation } from "../../../components/nav";
+
 import { HistoryItem } from "@/app/models/HistoryModel";
 
+import introDatas from "../../../datas/intro.json";
+
 export default function History() {
-  const data = aboutDatas.find(
+  const data = introDatas.find(
     (item) => item.slug.toLowerCase() === "my-history"
   )!;
   return (
@@ -39,7 +41,7 @@ export default function History() {
           <div className="flex mt-4">
             <div className="pb-4 z-10 flex flex-col items-center">
               <a
-                href={`/about`}
+                href={`/pages/about`}
                 className="text-white border border-white rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none hover:bg-white hover:text-black"
               >
                 About Me
@@ -47,7 +49,7 @@ export default function History() {
             </div>
             <div className="pb-4 z-10 flex flex-col items-center">
               <a
-                href={`/blog/about-family-and-friends`}
+                href={`/pages/about/family-friends`}
                 className="text-white border border-white rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none hover:bg-white hover:text-black"
               >
                 Introduction to Family and Friends

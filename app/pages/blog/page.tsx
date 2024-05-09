@@ -1,25 +1,19 @@
 "use client";
 import Link from "next/link";
-import { Navigation } from "../../components/nav";
-import { Card } from "../../components/card";
+import { Navigation } from "@/app/components/nav";
+import { Card } from "@/app/components/card";
 import { useEffect, useState } from "react";
-import { Article } from "../../work/article";
+import { Article } from "@/app/components/article";
 
-import aboutDatas from "../../datas/about.json";
-import blogDatas from "../../datas/blog.json";
+import { IntroItem, BlogItem } from "@/app/models";
 
-interface BlogData {
-  featured_image: string;
-  seo_title: string;
-  slug: string;
-  summary: string;
-  published: string;
-  categories: [{ name: string; slug: string }];
-}
+import introDatas from "@/app/datas/intro.json";
+import blogDatas from "@/app/datas/blog.json";
 
 export default function Example() {
-  const [aboutData, setAboutData] = useState<BlogData[]>([]);
-  const [blogData, setBlogData] = useState<BlogData[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [introData, setIntroData] = useState<IntroItem[]>([]);
+  const [blogData, setBlogData] = useState<BlogItem[]>([]);
   const [filterBy, setFilterBy] = useState<{
     first: boolean;
     second: boolean;
@@ -31,11 +25,13 @@ export default function Example() {
     third: false,
     fourth: false,
   });
+
   useEffect(() => {
-    setAboutData(aboutDatas as unknown as BlogData[]);
-    console.log(aboutData);
-    setBlogData(blogDatas as unknown as BlogData[]);
+    setIntroData(introDatas as unknown as IntroItem[]);
+    setBlogData(blogDatas as unknown as BlogItem[]);
+    setIsLoading(false);
   }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name } = e.target;
     setFilterBy((prevState) => ({
@@ -44,19 +40,19 @@ export default function Example() {
     }));
   };
 
-  const featured = aboutData.find(
+  const top1 = introData.find(
     (blog) => blog.slug.toLowerCase() === "introduction"
   )!;
-  const top2 = blogData.find(
-    (blog) => blog.slug.toLowerCase() === "about-family-and-friends"
+  const top2 = introData.find(
+    (blog) => blog.slug.toLowerCase() === "family-friends"
   )!;
-  const top3 = aboutData.find(
+  const top3 = introData.find(
     (blog) => blog.slug.toLowerCase() === "my-history"
   )!;
   const filteredBlogs = blogData
     .filter(
       (blog) =>
-        blog.slug !== featured?.slug &&
+        blog.slug !== top1?.slug &&
         blog.slug !== top2?.slug &&
         blog.slug !== top3?.slug
     )
@@ -80,25 +76,26 @@ export default function Example() {
       return true;
     });
   return (
-    <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+    <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen">
       <Navigation />
       <div className="px-6 pt-20 pb-10 mx-auto space-y-3 max-w-7xl lg:px-8 md:space-y-4 md:pt-24 lg:pt-32">
         <h1 className="text-4xl font-bold text-white">Blog</h1>
         <p className="text-lg text-gray-300">
           It is a collection of my thoughts, ideas, and experiences.
         </p>
+        {isLoading && <div className="text-white block mx-auto">Loading...</div>}
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
-            <Link href={`/about`}>
+            <Link href={`/pages/about`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <h2
-                  id="featured-post"
+                  id="top1-post"
                   className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
                 >
-                  {featured?.seo_title}
+                  {top1?.seo_title}
                 </h2>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                  {featured?.summary}
+                  {top1?.summary}
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
@@ -110,8 +107,8 @@ export default function Example() {
           </Card>
 
           <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-            {[top2, top3].filter(Boolean).map((blog) => (
-              <Link href={`/blog/${blog?.slug}`}>
+            {top2 && top3 && [top2, top3].filter(Boolean).map((blog: IntroItem, index: number) => (
+              <Link href={`/pages/about/${blog?.slug}`} key={index}>
                 <Card key={blog.slug}>
                   <article className="p-4 md:p-8">
                     <h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
@@ -205,28 +202,11 @@ export default function Example() {
           </li>
         </ul>
 
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
-          {filteredBlogs.map((blog: BlogData, index: number) => (
+        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16">
+          {filteredBlogs && filteredBlogs.map((blog: BlogItem, index: number) => (
             <Card key={index}>
               <Article blog={blog} />
             </Card>
-            // <Card key={index}>
-            //   <img
-            //     src={blog.featured_image}
-            //     className="h-96 w-full min-h-3.5	"
-            //   ></img>
-            //   <div className="pb-4 z-10 flex flex-col items-center">
-            //     <span className="px-6 pt-4 pb-4 lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
-            //       {blog.seo_title}
-            //     </span>
-            //     <Link
-            //       href={`/blog/${blog.slug}`}
-            //       className="text-white	border border-white rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none hover:bg-white hover:text-black"
-            //     >
-            //       Read More
-            //     </Link>
-            //   </div>
-            // </Card>
           ))}
         </div>
       </div>

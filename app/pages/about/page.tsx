@@ -1,9 +1,10 @@
 "use client";
 import { Navigation } from "../../components/nav";
-import aboutDatas from "../../datas/about.json";
+
+import introDatas from "../../datas/intro.json";
 
 export default function About() {
-  const data = aboutDatas.find(
+  const data = introDatas.find(
     (item) => item.slug.toLowerCase() === "introduction"
   )!;
   return (
@@ -22,7 +23,7 @@ export default function About() {
           <div className="flex mt-4">
             <div className="pb-4 z-10 flex flex-col items-center">
               <a
-                href={`/blog/about-family-and-friends`}
+                href={`/pages/about/family-friends`}
                 className="text-white border border-white rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none hover:bg-white hover:text-black"
               >
                 Introduction to Family and Friends
@@ -30,7 +31,7 @@ export default function About() {
             </div>
             <div className="pb-4 z-10 flex flex-col items-center">
               <a
-                href={`/about/history`}
+                href={`/pages/about/my-history`}
                 className="text-white border border-white rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none hover:bg-white hover:text-black"
               >
                 Summary of My History
