@@ -1,6 +1,6 @@
 "use client";
-import { Navigation } from "../../components/nav";
-import datas from "../../datas/blog.json";
+import { Navigation } from "../../../components/nav";
+import datas from "../../../datas/blog.json";
 
 type Props = {
   params: {
@@ -43,7 +43,7 @@ export default function PostPage({ params }: Props) {
           {slug !== "about-family-and-friends" ? (
             <div className="pb-4 z-10 flex flex-col items-center">
               <a
-                href={`/blog`}
+                href={`/pages/blog`}
                 className="text-white border border-white rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none hover:bg-white hover:text-black"
               >
                 View All Blogs

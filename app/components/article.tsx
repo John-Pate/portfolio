@@ -1,17 +1,9 @@
-import type { Project } from "@/.contentlayer/generated";
 import Link from "next/link";
 
-interface BlogData {
-  featured_image: string;
-  seo_title: string;
-  slug: string;
-  summary: string;
-  published: string;
-  categories: [{ name: string; slug: string }];
-}
+import { BlogItem } from "@/app/models";
 
 type Props = {
-  blog: BlogData;
+  blog: BlogItem;
 };
 
 export const Article: React.FC<Props> = ({ blog }) => {
@@ -26,7 +18,7 @@ export const Article: React.FC<Props> = ({ blog }) => {
   }
 
   return (
-    <Link href={`/blog/${blog?.slug}`}>
+    <Link href={`/pages/blog/${blog?.slug}`}>
       <article className="p-4 md:p-8">
         <h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
           {blog?.seo_title}
