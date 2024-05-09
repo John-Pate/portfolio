@@ -1,0 +1,21 @@
+[
+    {
+      "author": {
+        "email": "john.pate.programmer@gmail.com",
+        "first_name": "John",
+        "last_name": "Pate"
+      },
+      "created": "2024-03-25T22:38:51.841559Z",
+      "published": "2024-03-25T22:38:00Z",
+      "status": "published",
+      "updated": "2024-03-26T14:43:24.759287Z",
+      "slug": "cruisecode",
+      "title": "CruiseCode",
+      "summary": "CruiseCode is an online platform designed to enhance the cruise experience by connecting cruise passengers and travel agents with a variety of shore excursions. Through CruiseCode, users can easily book excursions tailored to their preferences.",
+      "body": "I played a pivotal role in modernizing CruiseCode's technology infrastructure by refactoring their legacy .NET platform to incorporate an Angular frontend with SCSS styling. This transformation not only enhanced the visual appeal and usability of the platform but also improved its overall performance and scalability. By implementing Angular, we provided users with a more dynamic and responsive interface, while the integration of SCSS allowed for more efficient styling management, resulting in a more polished and cohesive user experience. This update positioned CruiseCode to stay competitive in the ever-evolving landscape of online travel platforms.",
+      "list_items": "<ul>\r\n  <li>- Spearheaded the development of the client-facing travel excursion booking platform using Angular, TypeScript, and SCSS, while utilizing Restful API calls, resulting in a modern and user-friendly experience.</li>\r\n  <li>- Successfully integrated new features and functionality into the existing system, which utilized C#, ASP .NET, and Razor markup, maintaining backward compatibility while enhancing performance.</li>\r\n  <li>- Managed .NET Web API development alongside front-end tasks, optimizing SQL queries to enhance data retrieval and storage efficiency.</li>\r\n</ul>\r\n",
+      "link": "https://cruisecode.com/",
+      "repository": "https://github.com/johnpate/cruisecode"
+    }
+  ]
+  
