@@ -3,7 +3,7 @@ import { Github, Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "@/app/components/nav";
 import { Card } from "@/app/components/card";
-
+import { ContactItem } from "@/app/models";
 const socials = [
 	{
 		icon: <Linkedin size={20} />,
@@ -31,8 +31,8 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
-					{socials.map((s) => (
-						<Card>
+					{socials.map((s:ContactItem, index: number) => (
+						<Card key={index}>
 							<Link
 								href={s.href}
 								target="_blank"
