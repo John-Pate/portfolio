@@ -6,3 +6,10 @@ export interface BlogItem {
   published: string;
   categories: [{ name: string; slug: string }];
 }
+
+export interface OptionItem {
+  id: string;
+  value: string;
+  label: string;
+}
+

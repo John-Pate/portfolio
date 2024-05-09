@@ -1,0 +1,6 @@
+[
+  { "id": "1", "value": "tech", "label": "Technology" },
+  { "id": "2", "value": "sports", "label": "Sports" },
+  { "id": "3", "value": "monthly", "label": "Monthly" },
+  { "id": "4", "value": "reading", "label": "Reading" }
+]
