@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
-import { Navigation } from "../components/nav";
-import { Card } from "../components/card";
+import { Navigation } from "../../components/nav";
+import { Card } from "../../components/card";
 import { useEffect, useState } from "react";
-import { Article } from "../work/article";
+import { Article } from "../../work/article";
 
-import aboutDatas from "../datas/about.json";
-import blogDatas from "../datas/blog.json";
+import aboutDatas from "../../datas/about.json";
+import blogDatas from "../../datas/blog.json";
 
 interface BlogData {
   featured_image: string;
