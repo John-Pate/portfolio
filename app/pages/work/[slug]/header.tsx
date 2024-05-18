@@ -1,11 +1,11 @@
 "use client";
-import { ArrowLeft, Linkedin, Github, Mail } from "lucide-react";
+import { ArrowLeft, Send, Github, Mail } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { WorkHeader } from "@/app/models";
 
 export const Header: React.FC<WorkHeader> = ({ project }) => {
-	const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
 
   const links: { label: string; href: string }[] = [];
@@ -45,8 +45,8 @@ export const Header: React.FC<WorkHeader> = ({ project }) => {
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-8">
-            <Link target="_blank" href="https://www.linkedin.com/in/john-page/">
-              <Linkedin
+            <Link target="_blank" href="https://t.me/johnpate619">
+              <Send
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
                     ? " text-zinc-400 hover:text-zinc-100"
