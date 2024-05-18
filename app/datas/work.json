@@ -1,21 +1,56 @@
 [
-    {
-      "author": {
-        "email": "john.pate.programmer@gmail.com",
-        "first_name": "John",
-        "last_name": "Pate"
-      },
-      "created": "2024-03-25T22:38:51.841559Z",
-      "published": "2024-03-25T22:38:00Z",
-      "status": "published",
-      "updated": "2024-03-26T14:43:24.759287Z",
-      "slug": "cruisecode",
-      "title": "CruiseCode",
-      "summary": "CruiseCode is an online platform designed to enhance the cruise experience by connecting cruise passengers and travel agents with a variety of shore excursions. Through CruiseCode, users can easily book excursions tailored to their preferences.",
-      "body": "I played a pivotal role in modernizing CruiseCode's technology infrastructure by refactoring their legacy .NET platform to incorporate an Angular frontend with SCSS styling. This transformation not only enhanced the visual appeal and usability of the platform but also improved its overall performance and scalability. By implementing Angular, we provided users with a more dynamic and responsive interface, while the integration of SCSS allowed for more efficient styling management, resulting in a more polished and cohesive user experience. This update positioned CruiseCode to stay competitive in the ever-evolving landscape of online travel platforms.",
-      "list_items": "<ul>\r\n  <li>- Spearheaded the development of the client-facing travel excursion booking platform using Angular, TypeScript, and SCSS, while utilizing Restful API calls, resulting in a modern and user-friendly experience.</li>\r\n  <li>- Successfully integrated new features and functionality into the existing system, which utilized C#, ASP .NET, and Razor markup, maintaining backward compatibility while enhancing performance.</li>\r\n  <li>- Managed .NET Web API development alongside front-end tasks, optimizing SQL queries to enhance data retrieval and storage efficiency.</li>\r\n</ul>\r\n",
-      "link": "https://cruisecode.com/",
-      "repository": "https://github.com/johnpate/cruisecode"
-    }
-  ]
-  
+  {
+    "author": {
+      "email": "john.pate.programmer@gmail.com",
+      "first_name": "John",
+      "last_name": "Pate"
+    },
+    "created": "2024-03-25T22:38:51.841559Z",
+    "published": "2024-03-25T22:38:00Z",
+    "status": "published",
+    "updated": "2024-03-26T14:43:24.759287Z",
+    "slug": "cruisecode",
+    "title": "CruiseCode",
+    "summary": "CruiseCode is an online platform designed to enhance the cruise experience by connecting cruise passengers and travel agents with a variety of shore excursions. Through CruiseCode, users can easily book excursions tailored to their preferences.",
+    "body": "I played a pivotal role in modernizing CruiseCode's technology infrastructure by refactoring their legacy .NET platform to incorporate an Angular frontend with SCSS styling. This transformation not only enhanced the visual appeal and usability of the platform but also improved its overall performance and scalability. By implementing Angular, we provided users with a more dynamic and responsive interface, while the integration of SCSS allowed for more efficient styling management, resulting in a more polished and cohesive user experience. This update positioned CruiseCode to stay competitive in the ever-evolving landscape of online travel platforms.",
+    "list_items": "<ul>\r\n  <li>- Spearheaded the development of the client-facing travel excursion booking platform using Angular, TypeScript, and SCSS, while utilizing Restful API calls, resulting in a modern and user-friendly experience.</li>\r\n  <li>- Successfully integrated new features and functionality into the existing system, which utilized C#, ASP .NET, and Razor markup, maintaining backward compatibility while enhancing performance.</li>\r\n  <li>- Managed .NET Web API development alongside front-end tasks, optimizing SQL queries to enhance data retrieval and storage efficiency.</li>\r\n</ul>\r\n",
+    "link": "https://cruisecode.com/",
+    "repository": ""
+  },
+  {
+    "author": {
+      "email": "john.pate.programmer@gmail.com",
+      "first_name": "John",
+      "last_name": "Pate"
+    },
+    "created": "2024-03-25T22:38:51.841559Z",
+    "published": "2024-03-25T22:38:00Z",
+    "status": "published",
+    "updated": "2024-03-26T14:43:24.759287Z",
+    "slug": "skillstruck",
+    "title": "SkillStruck",
+    "summary": "SkillStruck is an online learning platform transforming K12 computer science education with engaging games, coding curriculum, and self-paced learning. Its AI-powered Learning Studio empowers teachers to seamlessly integrate advanced technology into their classrooms, making learning both effective and enjoyable.",
+    "body": "I contributed to SkillStruck's platforms by developing front-end interfaces using Vue.js and Tailwind CSS for a visually appealing and user-friendly experience. Additionally, I worked on the backend API layer utilizing Python with Django framework, while leveraging Supabase for efficient database management, ensuring seamless data integration and enhanced functionality across the platform.",
+    "list_items": "<ul>\r\n  <li>- Developed intuitive user interfaces using Vue/Nuxt 3 and Tailwind CSS, consuming APIs, for the company's learning management platform and computer science learning platform, ensuring seamless user experience.</li>\r\n  <li>- Architected and maintained backend systems with Python and Django to support core functionalities of product offerings and streamline user management.</li>\r\n  <li>- Integrated AI technology for the 'Chat for Schools' feature, enabling teachers to facilitate guided communication for students while ensuring a safe and secure environment.</li>\r\n</ul>\r\n",
+    "link": "https://www.skillstruck.com/",
+    "repository": ""
+  },
+  {
+    "author": {
+      "email": "john.pate.programmer@gmail.com",
+      "first_name": "John",
+      "last_name": "Pate"
+    },
+    "created": "2024-03-25T22:38:51.841559Z",
+    "published": "2024-03-25T22:38:00Z",
+    "status": "published",
+    "updated": "2024-03-26T14:43:24.759287Z",
+    "slug": "dreamfactory",
+    "title": "DreamFactory",
+    "summary": "The DreamFactory software provides a versatile solution for both cloud-based and on-premise environments, offering features such as security controls, role-based access, API key management, and service-side scripting in PHP, Python, and NodeJS. Notably, it excels in generating secure and documented APIs for various databases like Microsoft SQL Server, MySQL, Snowflake, PostgreSQL, Oracle, and MongoDB.",
+    "body": "As a Developer Support Engineer at DreamFactory, I played a pivotal role in enhancing the frontend of our application developed in Angular, ensuring a seamless user experience. Additionally, I contributed significantly to building our documentation and wiki using React, facilitating comprehensive guidance for users. Leveraging my expertise, I provided exceptional customer support for our PHP and Laravel applications, actively contributing to building new features within these frameworks, while also capitalizing on our extensive experience with container technologies to cater to our Docker user base.",
+    "list_items": "<ul>\r\n  <li>- Emphasized proficiency in PHP and Laravel to effectively troubleshoot and resolve issues, showcasing in-depth knowledge and understanding of these technologies.</li>\r\n  <li>- Leveraged React to design and develop comprehensive documentation, guides, and tutorials ensuring clarity, accuracy, and accessibility for developers of varying skill levels in effectively utilizing the company's products.</li>\r\n  <li>- Designed and maintained the user interface of the company's flagship product using Angular, TypeScript, and SCSS, ensuring a modern, intuitive, and responsive user experience.</li>\r\n</ul>\r\n",
+    "link": "https://www.dreamfactory.com/",
+    "repository": ""
+  }
+]
